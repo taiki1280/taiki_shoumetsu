@@ -6,26 +6,25 @@ html,body
   display: flex
   flex-direction: column
 
-  header
+header
+  width: 100%
+  background: #000
+  #画像
+    width: 100%
+    height: 33.3vw
+    background-image: url("../img/1500x500.jpg")
     display: flex
-    padding: 0
-    margin: 3vh 0
-    img
-      margin: auto
-      width: 100%
-      object-fit: cover
-  main
+    margin: 0
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
     div
-      display: flex
       width: 100%
-      background: black
-      &:nth-child(1)
-        flex-direction: column
-        justify-content: center
-        img
-          margin: auto
-          width: 50%
-      &:nth-child(2)
-        flex-direction: column
-        img
-          width: 100%
+      display: flex
+      background: rgba(#000,.8)
+      h1
+        margin: auto
+        color: #fff
+        font-size: 8vw
+
+    

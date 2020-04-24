@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body {
   width: 100%;
   height: 100vh;
@@ -12,52 +13,35 @@ html, body {
           flex-direction: column;
 }
 
-html header, body header {
+header {
+  width: 100%;
+  background: #000;
+}
+
+header #画像 {
+  width: 100%;
+  height: 33.3vw;
+  background-image: url("../img/1500x500.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0;
-  margin: 3vh 0;
+  margin: 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-html header img, body header img {
-  margin: auto;
+header #画像 div {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-html main div, body main div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
 }
 
-html main div:nth-child(1), body main div:nth-child(1) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-html main div:nth-child(1) img, body main div:nth-child(1) img {
+header #画像 div h1 {
   margin: auto;
-  width: 50%;
-}
-
-html main div:nth-child(2), body main div:nth-child(2) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-html main div:nth-child(2) img, body main div:nth-child(2) img {
-  width: 100%;
+  color: #fff;
+  font-size: 8vw;
 }
 /*# sourceMappingURL=style.css.map */
