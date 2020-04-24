@@ -1,0 +1,63 @@
+html, body {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html header, body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 3vh 0;
+}
+
+html header img, body header img {
+  margin: auto;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html main div, body main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background: black;
+}
+
+html main div:nth-child(1), body main div:nth-child(1) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html main div:nth-child(1) img, body main div:nth-child(1) img {
+  margin: auto;
+  width: 50%;
+}
+
+html main div:nth-child(2), body main div:nth-child(2) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html main div:nth-child(2) img, body main div:nth-child(2) img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+table th {
+  background: -webkit-gradient(linear, left top, left bottom, from(cyan), color-stop(white), to(cyan));
+  background: linear-gradient(cyan, white, cyan);
+}
+
+table tr.火 {
+  background: red;
+}
+
+table tr.水 {
+  background: blue;
+}
+
+table tr.木 {
+  background: green;
+}
+
+table tr.光 {
+  background: yellow;
+}
+
+table tr.闇 {
+  background: purple;
+}
+/*# sourceMappingURL=list.css.map */

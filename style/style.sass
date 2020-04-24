@@ -1,0 +1,31 @@
+html,body
+  width: 100%
+  height: 100vh
+  padding: 0
+  margin: 0
+  display: flex
+  flex-direction: column
+
+  header
+    display: flex
+    padding: 0
+    margin: 3vh 0
+    img
+      margin: auto
+      width: 100%
+      object-fit: cover
+  main
+    div
+      display: flex
+      width: 100%
+      background: black
+      &:nth-child(1)
+        flex-direction: column
+        justify-content: center
+        img
+          margin: auto
+          width: 50%
+      &:nth-child(2)
+        flex-direction: column
+        img
+          width: 100%
