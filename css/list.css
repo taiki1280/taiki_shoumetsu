@@ -1,0 +1,51 @@
+@charset "UTF-8";
+table {
+  background: #ffffff;
+  color: #000000;
+  border-collapse: collapse;
+  width: 100%;
+  border: solid 2px #ffffff;
+}
+
+table caption {
+  color: #000000;
+  border: solid 2px #ffffff;
+  background: #ffffff;
+}
+
+table tr:nth-child(1) {
+  text-align: center;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00ffff), color-stop(#ffffff), to(#00ffff));
+  background: linear-gradient(#00ffff, #ffffff, #00ffff);
+}
+
+table tr td {
+  border: solid 0.5px #000000;
+}
+
+table tr.火 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0.1)), color-stop(#ffffff), to(rgba(255, 0, 0, 0.1)));
+  background: linear-gradient(rgba(255, 0, 0, 0.1), #ffffff, rgba(255, 0, 0, 0.1));
+}
+
+table tr.水 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 255, 0.1)), color-stop(#ffffff), to(rgba(0, 255, 255, 0.1)));
+  background: linear-gradient(rgba(0, 255, 255, 0.1), #ffffff, rgba(0, 255, 255, 0.1));
+}
+
+table tr.木 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 255, 0, 0.1)), color-stop(#ffffff), to(rgba(0, 255, 0, 0.1)));
+  background: linear-gradient(rgba(0, 255, 0, 0.1), #ffffff, rgba(0, 255, 0, 0.1));
+}
+
+table tr.光 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 0, 0.1)), color-stop(#ffffff), to(rgba(255, 255, 0, 0.1)));
+  background: linear-gradient(rgba(255, 255, 0, 0.1), #ffffff, rgba(255, 255, 0, 0.1));
+}
+
+table tr.闇 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 255, 0.1)), color-stop(#ffffff), to(rgba(255, 0, 255, 0.1)));
+  background: linear-gradient(rgba(255, 0, 255, 0.1), #ffffff, rgba(255, 0, 255, 0.1));
+}
+/*# sourceMappingURL=list.css.map */
