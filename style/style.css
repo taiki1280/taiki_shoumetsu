@@ -44,4 +44,61 @@ header #画像 div h1 {
   color: #fff;
   font-size: 8vw;
 }
+
+main > * {
+  margin: 0 2vw;
+}
+
+main h1 {
+  background: gray;
+  color: white;
+  font-size: 10vw;
+  margin: 2vw;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+main dl, main dt, main dd {
+  margin: 0;
+  padding: 0;
+}
+
+main dl {
+  background: magenta;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main dl dt {
+  width: 100%;
+  font-size: 8vw;
+  background: yellow;
+}
+
+main dl dd {
+  width: 100%;
+  font-size: 6vw;
+  background: cyan;
+}
+
+main dl dl dt {
+  background: magenta;
+}
+
+main dl dl dl {
+  background: cyan;
+}
+
+main dl dl dl dd:first-child {
+  font-size: 6vw;
+  color: white;
+  background: black;
+}
 /*# sourceMappingURL=style.css.map */

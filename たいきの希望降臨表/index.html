@@ -8,23 +8,35 @@
   <script src="js/main.js"></script>
   <link rel='stylesheet' href='css/list.sass'>
   <link rel='stylesheet' href='css/list.css'>
+  <link rel='stylesheet' href='css/style.sass'>
+  <link rel='stylesheet' href='css/style.css'>
 </head>
 
 <body>
+  <h1>説明</h1>
+  <p>
+    俺が優先的にやりたいマルチの降臨を一覧を表にしてみました。<br>
+    備考の欄には主にリーダーとして出せるタマシイを書きました。<br>
+    現状スマホ向けな見た目を意識しました。<br>
+    パソコンの方はすみません。。<br>
+    まだ内容も薄いのでこれから増やしていきたいと思います。<br>
+    意見等あればDMで教えていただけると幸いです。<br>
+    <!-- 難易度と属性にてソート(降順/昇順に並べ替え)が出来ます。<br> -->
+    <!-- 下記の項目にてチェックをつけると表を表示します。 -->
+    <!-- <ol>
+      <li><input type="checkbox">難易度</li>
+      <li><input type="checkbox">属性</li>
+      <li><input type="checkbox">クエスト名</li>
+      <li><input type="checkbox">タマシイ名</li>
+      <li><input type="checkbox">備考</li>
+      <li><input type="checkbox">募集</li>
+      <li><input type="checkbox">完成度</li>
+    </ol> -->
+  </p>
+
   <table>
-    <caption>消滅都市</caption>
-    <thead>
-      <tr>
-        <th>難易度</th>
-        <th>属性</th>
-        <th>クエスト名</th>
-        <th>タマシイ名</th>
-        <th>備考</th>
-        <th>募集</th>
-        <th>完成度</th>
-      </tr>
-    </thead>
-    <tbody id='csv-body'>
+    <caption>たいきのマルチ希望降臨一覧</caption>
+    <tbody id='csv-body'></tbody>
   </table>
 </body>
 

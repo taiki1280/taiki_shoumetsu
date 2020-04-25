@@ -1,0 +1,40 @@
+html,body
+  margin: 0
+  padding: 0
+  background: #000000
+  color: #ffffff
+
+body
+  font-size: 3vmax
+  h1,p
+    margin: 0
+  p
+    font-size: 6vw
+  table
+    // font-size: 3vmax
+    tr
+      display: flex
+      flex-wrap: wrap
+      width: 100%
+      margin: 3vw 0
+      &:nth-child(1)
+        position: sticky
+        top: 0
+      td
+        text-align: center
+        &:nth-child(1)
+          flex-grow: 1
+          // width: 10%
+        &:nth-child(2)
+          flex-grow: 1
+          // width: 10%
+        &:nth-child(3)
+          flex-grow: 2
+        &:nth-child(4)
+          width: 100%
+        &:nth-child(5)
+          width: 100%
+        &:nth-child(6)
+          flex-grow: 1
+        &:nth-child(7)
+          flex-grow: 1

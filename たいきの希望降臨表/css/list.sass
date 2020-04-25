@@ -1,15 +1,29 @@
+@mixin gradation($color)
+  background: linear-gradient($color,#ffffff,$color)
 table
-  
-  th
-    background: linear-gradient(cyan,white,cyan)
+  background: #ffffff
+  color: #000000
+  border-collapse: collapse
+  width: 100%
+  border: solid 2px #ffffff
+  caption
+    color: #000000
+    border: solid 2px #ffffff
+    background: #ffffff
   tr
+    &:nth-child(1)
+      text-align: center
+      font-weight: bold
+      @include gradation(#00ffff)
+    td
+      border: solid 0.5px #000000
     &.火
-      background: red
+      @include gradation(rgba(#ff0000,.1))
     &.水
-      background: blue
+      @include gradation(rgba(#00ffff,.1))
     &.木
-      background: green
+      @include gradation(rgba(#00ff00,.1))
     &.光
-      background: yellow
+      @include gradation(rgba(#ffff00,.1))
     &.闇
-      background: purple
+      @include gradation(rgba(#ff00ff,.1))

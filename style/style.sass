@@ -27,4 +27,40 @@ header
         color: #fff
         font-size: 8vw
 
-    
+main
+  > *
+    margin: 0 2vw
+  h1
+    background: gray
+    color: white
+    font-size: 10vw
+    margin: 2vw
+    position: sticky
+    top: 0
+  dl,dt,dd
+    margin: 0
+    padding: 0
+    // text-align: center
+  dl
+    background: magenta
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    dt
+      width: 100%
+      font-size: 8vw
+      background: yellow
+    dd
+      width: 100%
+      font-size: 6vw
+      background: cyan
+    dl
+      dt
+        background: magenta
+      dl
+        background: cyan
+        dd
+          &:first-child
+            font-size: 6vw
+            color: white
+            background: black

@@ -1,36 +1,32 @@
 function readCsv(data) {
-  var target = '#csv-body';
-  var csv = $.csv.toArrays(data);
-  var insert = '';
+  var target = '#csv-body'
+  var csv = $.csv.toArrays(data)
+  var insert = ''
   $(csv).each(function () {
     if (this.length > 0) {
-      insert += '<tr>';
+      insert += '<tr>'
       $(this).each(function () {
-        insert += '<td>' + this + '</td>';
-      });
-      insert += '</tr>';
+        insert += '<td>' + this + '</td>'
+      })
+      insert += '</tr>'
     }
-  });
-  $(target).append(insert);
-  sousyoku();
+  })
+  $(target).append(insert)
+  装飾()
 }
-var csvfile = 'test.csv';
+var csvfile = 'test.csv'
 $(function () {
-  $.get(csvfile, readCsv, 'text');
-});
+  $.get(csvfile, readCsv, 'text')
+})
 
-function sousyoku() {
-  // $('td').addClass("水");
-  // $('td').each(function () {
-  //   $(this).addClass("水")
-  // });
-  var array = ["火", "水", "木", "光", "闇"];
-  var i = 0
-  $('td:nth-child(2)').each(function (index, value) {
-    for (let index = 0; index < array.length; index++) {
-      const element = array[index];
-      if ($(this).text() == element)
-        $(this).parent().addClass(element);
+function 装飾() {
+  const 全属性 = ["火", "水", "木", "光", "闇"]
+  const 属性 = $('td:nth-child(2)')
+
+  属性.each(function () {
+    for (var i in 全属性) {
+      if ($(this).text() == 全属性[i])
+        $(this).parent().addClass(全属性[i])
     }
-  });
-};
+  })
+}
